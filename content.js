@@ -1,11 +1,11 @@
-const SELECTOR = "#desktop-dynamic-upsell-dialog";
+const SELECTOR = "#selector-class-name";
 
 function removeUpsell() {
     const element = document.querySelector(SELECTOR);
 
     if (element) {
         element.remove();
-        console.log("Login Modal Removed");
+        console.log("Selecotor Class Removed");
     }
 }
 
