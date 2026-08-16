@@ -1,6 +1,6 @@
 const SELECTOR = "#selector-class-name";
 
-function removeUpsell() {
+function removeSelector() {
     const element = document.querySelector(SELECTOR);
 
     if (element) {
@@ -10,11 +10,11 @@ function removeUpsell() {
 }
 
 // Remove it immediately
-removeUpsell();
+removeSelector();
 
 // Watch for the website creating it again
 const observer = new MutationObserver(() => {
-    removeUpsell();
+    removeSelector();
 });
 
 observer.observe(document.documentElement, {
